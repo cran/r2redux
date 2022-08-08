@@ -34,17 +34,16 @@
   #' #0.03836254
   #'
   #' #output$var (variance of R2) 
-  #' #0.0001437583
+  #' #0.0001436128
   #' 
   #' #output$r2_based_p (P-value under the null hypothesis, i.e. R2=0)
-  #' #1.213645e-10
+  #' #1.188162e-10
   #' 
   #' #output$upper_r2 (upper limit of 95% CI for R2)
-  #' #0.06435214
+  #' #0.06433782
   #' 
   #' #output$lower_r2 (lower limit of 95% CI for R2)
-  #' #0.01763347
-  #'
+  #' #0.01764252
   #'
   #'
   #' #To get the test statistic for R2(y~x[,v1]+x[,v2]+x[,v3])
@@ -57,63 +56,66 @@
   #' #r2redux output
   #'
   #' #output$rsq (R2)
-  #' #0.03917668
+  #' #0.03836254
   #' 
   #' #output$var (variance of R2)
-  #' #0.0001499374
+  #' #0.0001436128
   #' 
   #' #output$r2_based_p (R2 based P-value)
-  #' #7.461267e-11
+  #' #1.188162e-10
   #' 
   #' #output$upper_r2 (upper limit of 95% CI for R2)
-  #' #0.06538839
+  #' #0.06433782
   #' 
   #' #output$lower_r2 (lower limit of 95% CI for R2)
-  #' #0.01821657
+  #' #0.01764252
   
 
   
 
   r2_var = function (dat,v1,nv) {
-    #source("aoa12_1.r")
-    #source("aoa12_13.r")
-    #source("aoa1_2.r")
-    #source("aoa12_3.r")
-    #source("aoa12_34.r")
-
-    dat=scale(dat);omat=cor(dat)
-
-      ord=c(1,1+v1)
-
-      m0=lm(dat[,1]~1)
-      s0=summary(m0)
-      m1=lm(dat[,1]~as.matrix(dat[,(1+v1)]))
-      s1=summary(m1)
-
-      R2=s1$r.squared;mv2=length(v1)    #expected variance for s1r2
-      t100=(1/(nv-1) *(1-R2)^2) #Infor matrix
-      lamda=R2/t100           #non-central chi^2 (mu=k+lamda, var=2*(k+2*lamda))
-      t100=t100^2*2*(mv2+2*lamda)  #var(beta)^2*var(non-cental chi)
-      var1=t100  #*(1-R2)
-
-      LR=-2*(logLik(m0)-logLik(m1))
-      p1=pchisq(LR,mv2,lower.tail=F)
-
-      dvr2=R2
-      chi_dum=dvr2/(1/(nv-1)*(1-dvr2)^2) #NCP
-      p2=pchisq(chi_dum,1,lower.tail=F)
-
-      #95% CI
-      mv=mv2;lamda=chi_dum
-      uci=qchisq(0.975,1,ncp=lamda)
-      uci=(uci-lamda-1)/(2*(mv+2*lamda))^.5
-      uci=uci*var1^.5+dvr2
-      lci=qchisq(0.025,1,ncp=lamda)
-      lci=(lci-lamda-1)/(2*(mv+2*lamda))^.5
-      lci=lci*var1^.5+dvr2
-
-      z=list(var=var1,LRT_p=p1,r2_based_p=p2,rsq=dvr2,upper_r2=uci,lower_r2=lci)
-      #NOTE: r2_based_p=p2 due to chi^2 distribution
-      return(z)
-
-  }
+  dat=scale(dat);omat=cor(dat)
+  
+  ord=c(1,1+v1)
+  
+  
+  
+  m0=lm(dat[,1]~1)
+  s0=summary(m0)
+  m1=lm(dat[,1]~as.matrix(dat[,(1+v1)]))
+  s1=summary(m1)
+  
+  
+  
+  R2=s1$r.squared;mv2=length(v1) #expected variance for s1r2
+  t100=(1/(nv) *(1-R2)^2) #Infor matrix
+  lamda=R2/t100 #non-central chi^2 (mu=k+lamda, var=2*(k+2*lamda))
+  t100=t100^2*2*(mv2+2*lamda) #var(beta)^2*var(non-cental chi)
+  var1=t100 
+  
+  
+  LR=-2*(logLik(m0)-logLik(m1))
+  p1=pchisq(LR,mv2,lower.tail=F)
+  
+  dvr2=R2
+  chi_dum=dvr2/(1/(nv)*(1-dvr2)^2) #NCP
+  p2=pchisq(chi_dum,1,lower.tail=F)
+  
+  
+  
+  #95% CI
+  
+  mv=mv2;lamda=chi_dum
+  uci=qchisq(0.975,1,ncp=lamda)
+  uci=(uci-lamda-1)/(2*(mv+2*lamda))^.5
+  uci=uci*var1^.5+dvr2
+  lci=qchisq(0.025,1,ncp=lamda)
+  lci=(lci-lamda-1)/(2*(mv+2*lamda))^.5
+  lci=lci*var1^.5+dvr2
+  
+  
+  z=list(var=var1,LRT_p=p1,r2_based_p=p2,rsq=dvr2,upper_r2=uci,lower_r2=lci)
+  #NOTE: r2_based_p=p2 due to chi^2 distribution
+  return(z)
+  
+}

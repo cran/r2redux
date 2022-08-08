@@ -22,7 +22,8 @@ This function will estimate significant difference between two PGS (either depen
 \item{var1}{Variance of R2_1}
 \item{var2}{variance of R2_2}
 \item{var_diff}{Variance of difference between R2_1 and R2_2}
-\item{r2_based_p}{P-value for significant difference between R2_1 and R2_2}
+\item{r2_based_p}{two tailed P-value for significant difference between R2_1 and R2_2}
+\item{r2_based_p_one_tail}{one tailed P-value for significant difference}
 \item{mean_diff}{Differences between R2_1 and R2_2}
 \item{upper_diff}{Upper limit of 95\% CI for the difference}
 \item{lower_diff}{Lower limit of 95\% CI for the difference}
@@ -55,16 +56,19 @@ output
 #0.03881135
 
 #output$var1 (variance of R2_1)
-#0.0001437583
+#0.0001436128
 
 #output$var2 (variance of R2_2)
-#0.0001452828
+#0.0001451358
 
 #output$var_diff (variance of difference between R2_1 and R2_2)
 #5.678517e-07
 
-#output$r2_based_p (p-value for significant difference between R2_1 and R2_2)
+#output$r2_based_p (two tailed p-value for significant difference)
 #0.5514562
+
+#output$r2_based_p_one_tail(one tailed p-value for significant difference)
+#0.2757281
 
 #output$mean_diff (differences between R2_1 and R2_2)
 #-0.0004488044
@@ -94,25 +98,25 @@ output=r2_diff(dat,v1,v2,nv)
 #0.03836254
 
 #output$var1 (variance of R2_1)
-#0.0001475195
+#0.0001473686
 
 #output$var2 (variance of R2_2)
-#0.0001437583
+#0.0001436128
 
 #output$var_diff (variance of difference between R2_1 and R2_2)
 #2.321425e-06
 
 #output$r2_based_p (p-value for significant difference between R2_1 and R2_2)
-#0.4369177
+#0.4366883
 
 #output$mean_diff (differences between R2_1 and R2_2)
 #0.0006042383
 
 #output$upper_diff (upper limit of 95\% CI for the difference)
-#0.004887989
+#0.00488788
 
 #output$lower_diff (lower limit of 95\% CI for the difference)
-#-0.0005574975
+#-0.0005576171
 }
 \keyword{R2}
 \keyword{information}
