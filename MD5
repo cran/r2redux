@@ -1,4 +1,4 @@
-ec77d32199e9a234217a62deffe95ea2 *DESCRIPTION
+d2d52a8ff33eaeef7b1f924067da36f9 *DESCRIPTION
 36bac5ce430b6feea4f71138292909f1 *NAMESPACE
 616c9e05c3d115fcc142caa17f75917b *R/aoa12_1.r
 cd22e487ece1abbb0f013ef1f8efb119 *R/aoa12_13.r
@@ -39,3 +39,5 @@ ec29d1d0ef83981026b56f0c8a6b17e2 *man/r2_diff.Rd
 d732463dd9126d338cec143a3405eb8c *man/r2_enrich_beta.Rd
 cf74c84e64b9d5ecb1ff55437277ab10 *man/r2_var.Rd
 58f807b5f511a85dd9b7b2c39042f4a6 *man/r_diff.Rd
+c697be811b54a14e5549c96878da67dc *tests/testthat.R
+225e3812b897786befc574f805c96dc2 *tests/testthat/test-r2redux.R
