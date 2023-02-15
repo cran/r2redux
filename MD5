@@ -1,4 +1,4 @@
-6109abd5917969cfa4dfbaebc7c7492a *DESCRIPTION
+6ffff8190bc293f6a8cc57731eb6be56 *DESCRIPTION
 36bac5ce430b6feea4f71138292909f1 *NAMESPACE
 616c9e05c3d115fcc142caa17f75917b *R/aoa12_1.r
 cd22e487ece1abbb0f013ef1f8efb119 *R/aoa12_13.r
@@ -14,7 +14,7 @@ d185bd95eb767185123854a9be90f670 *R/dat2.r
 81339103ae8e47615e9d847864002bb7 *R/r2_beta_var.r
 5abcc46be74a507acb441b1129fafe13 *R/r2_diff2.r
 172bf374838776eddfd6196b609e33a7 *R/r2_enrich_beta3.r
-f1098df10e24f893788f7429ed6fa1ee *R/r2_var2.r
+837a2217851798db0d4d951e620c5232 *R/r2_var2.r
 3e73aeaa5e2ec6ca4496b76c40eefe52 *R/r_aoa12_1.r
 208619270aaecf62802c605212a2cca9 *R/r_aoa12_13.r
 0c98774038b3b592d2c271aefa5fdc09 *R/r_aoa12_3.r
@@ -37,7 +37,7 @@ d974256eee46276e75457644afc5bc70 *man/olkin_beta_ratio.Rd
 eae4f42a2f855861b454664a3fba2876 *man/r2_beta_var.Rd
 ec29d1d0ef83981026b56f0c8a6b17e2 *man/r2_diff.Rd
 d732463dd9126d338cec143a3405eb8c *man/r2_enrich_beta.Rd
-cf74c84e64b9d5ecb1ff55437277ab10 *man/r2_var.Rd
+d5800fba71a569db3ada044df380c1fd *man/r2_var.Rd
 58f807b5f511a85dd9b7b2c39042f4a6 *man/r_diff.Rd
 c697be811b54a14e5549c96878da67dc *tests/testthat.R
 26716e4d5eec4e8608db93b0c559dc2b *tests/testthat/test-r2redux.R
