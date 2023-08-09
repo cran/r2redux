@@ -32,7 +32,7 @@ v1 indicates the ith column in the x matrix
 }
 \examples{
 
-#To get the test statistics for R2(y~x[,v1])
+#To get the test statistics for R2(y~x[,1])
 dat=dat1
 nv=length(dat$V1)
 v1=c(1)
@@ -57,7 +57,7 @@ output
 #0.01764252
 
 
-#To get the test statistic for R2(y~x[,v1]+x[,v2]+x[,v3])
+#To get the test statistic for R2(y~x[,1]+x[,2]+x[,3])
 
 dat=dat1
 nv=length(dat$V1)
