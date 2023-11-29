@@ -1,4 +1,4 @@
-93fe76e70d46985f8ec123893ec65d57 *DESCRIPTION
+acb2904b032da26fb380fa38ce1079ae *DESCRIPTION
 36bac5ce430b6feea4f71138292909f1 *NAMESPACE
 616c9e05c3d115fcc142caa17f75917b *R/aoa12_1.r
 cd22e487ece1abbb0f013ef1f8efb119 *R/aoa12_13.r
@@ -12,7 +12,7 @@ ba923542c7dac5e4ceffa6e2c7416c88 *R/cc_trf.r
 024dd456d26a7a1f3d2615ff71150698 *R/dat1.r
 d185bd95eb767185123854a9be90f670 *R/dat2.r
 81339103ae8e47615e9d847864002bb7 *R/r2_beta_var.r
-6767b82d40d45f270c13960580543ae0 *R/r2_diff2.r
+27217218c5d4f99c6a123115fece2e1d *R/r2_diff2.r
 172bf374838776eddfd6196b609e33a7 *R/r2_enrich_beta3.r
 a6cf78eafa9dab966716289feea67862 *R/r2_var2.r
 3e73aeaa5e2ec6ca4496b76c40eefe52 *R/r_aoa12_1.r
@@ -20,7 +20,7 @@ a6cf78eafa9dab966716289feea67862 *R/r2_var2.r
 0c98774038b3b592d2c271aefa5fdc09 *R/r_aoa12_3.r
 cc635b9f107f0a5a81459c59dfd34c48 *R/r_aoa12_34.r
 f69e7d56fb113430560e8c7feffe73ed *R/r_aoa1_2.r
-cb9dd4916f7f7fcc2615918b27ec5889 *R/r_diff.r
+af8ca8ae5c4e017d53d5712ef8faf890 *R/r_diff.r
 d5efa5af24815b9337a852673f9d9a18 *data/dat1.rda
 4bda2d477146778395552b8db7cd11ee *data/dat2.rda
 7903ebbe6de28ea0dd81dd92325e8b44 *man/cc_trf.Rd
@@ -35,9 +35,9 @@ f7fe8633a56d102106716c075730bd56 *man/olkin1_2.Rd
 01c682eb18760decea4f862c45ef3749 *man/olkin_beta_inf.Rd
 d974256eee46276e75457644afc5bc70 *man/olkin_beta_ratio.Rd
 eae4f42a2f855861b454664a3fba2876 *man/r2_beta_var.Rd
-397ba80853ce7713634aef380bc7bb3b *man/r2_diff.Rd
+c598aba560bb9a78142290fe8b9e687e *man/r2_diff.Rd
 d732463dd9126d338cec143a3405eb8c *man/r2_enrich_beta.Rd
 6c4d3303b3d1063e2dc0c414508e3f25 *man/r2_var.Rd
-cc52eb926947e435becbf603408e473b *man/r_diff.Rd
+3230286ef8c906f09e45de1ecde01cd9 *man/r_diff.Rd
 c697be811b54a14e5549c96878da67dc *tests/testthat.R
 10944a4dabb7417563335ea8a578ec65 *tests/testthat/test-r2redux.R

@@ -115,6 +115,13 @@ output
 
 #output$lower_diff
 #-0.003445429
+
+
+#Note: If the directions are not consistent, for instance, if one correlation
+#is positive (R_1) and another is negative (R_2), or vice versa, it is 
+#crucial to approach the interpretation of the comparative test with caution. 
+#This caution is especially emphasized when applying r_diff() 
+#in a nested model comparison involving a joint model
 }
 \keyword{R2}
 \keyword{information}
