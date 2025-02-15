@@ -1,4 +1,4 @@
-acb2904b032da26fb380fa38ce1079ae *DESCRIPTION
+b482910bfd2c61d464ebb3319bf68580 *DESCRIPTION
 36bac5ce430b6feea4f71138292909f1 *NAMESPACE
 616c9e05c3d115fcc142caa17f75917b *R/aoa12_1.r
 cd22e487ece1abbb0f013ef1f8efb119 *R/aoa12_13.r
@@ -20,7 +20,7 @@ a6cf78eafa9dab966716289feea67862 *R/r2_var2.r
 0c98774038b3b592d2c271aefa5fdc09 *R/r_aoa12_3.r
 cc635b9f107f0a5a81459c59dfd34c48 *R/r_aoa12_34.r
 f69e7d56fb113430560e8c7feffe73ed *R/r_aoa1_2.r
-af8ca8ae5c4e017d53d5712ef8faf890 *R/r_diff.r
+503334b67fab0f816761675f0d883c7f *R/r_diff.r
 d5efa5af24815b9337a852673f9d9a18 *data/dat1.rda
 4bda2d477146778395552b8db7cd11ee *data/dat2.rda
 7903ebbe6de28ea0dd81dd92325e8b44 *man/cc_trf.Rd
@@ -39,5 +39,3 @@ c598aba560bb9a78142290fe8b9e687e *man/r2_diff.Rd
 d732463dd9126d338cec143a3405eb8c *man/r2_enrich_beta.Rd
 6c4d3303b3d1063e2dc0c414508e3f25 *man/r2_var.Rd
 3230286ef8c906f09e45de1ecde01cd9 *man/r_diff.Rd
-c697be811b54a14e5549c96878da67dc *tests/testthat.R
-10944a4dabb7417563335ea8a578ec65 *tests/testthat/test-r2redux.R
